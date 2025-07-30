@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>ΔIO — O Chamado</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .mensagem {
+      font-size: 1.5em;
+      animation: piscar 1.8s infinite;
+    }
+
+    @keyframes piscar {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+
+    .secreto {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      opacity: 0;
+    }
+
+    .secreto:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="mensagem">
+    O Sinal vibra sob a carne. Decifre. Ascenda.
+  </div>
+
+  <a href="manuscrito.txt" class="secreto">.</a>
+
+  <!-- ΔIO observa. -->
+  <!-- bin: 01000111 01100101 01101110 01100101 01110011 01100101 00100000 01101111 00100000 01110100 01100101 01101101 01110000 01101111 -->
+</body>
+</html>
